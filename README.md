@@ -1,6 +1,6 @@
 # ProductAI-agent
 Production-ready AI framework built with FastAPI, supporting AI agents and multi-agent workflows using LangGraph. Includes observability with Langfuse and built-in support for RAG systems to deliver accurate, context-aware responses.
-
+# <img src="https://github.com/trungtruc123/product_aiagent/blob/develop/assets/images/ai_architecture_diagram.svg"/>
 ## 💬 Where to ask questions
 Please use our dedicated channels for questions and discussion. Help is much more valuable if it's shared publicly so that more people can benefit from it.
 
