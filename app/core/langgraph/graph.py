@@ -61,6 +61,7 @@ class LangGraphAgent:
         """Initialize the LangGraph Agent with necessary components."""
         # Use the LLM service with tools bound
         self.llm_service = llm_service
+        # Bind tools to the LLM service so the model knows what functions it can call
         self.llm_service.bind_tools(tools)
         self.tools_by_name = {tool.name: tool for tool in tools}
         self._connection_pool: Optional[AsyncConnectionPool] = None
@@ -267,7 +268,7 @@ class LangGraphAgent:
                 connection_pool = await self._get_connection_pool()
                 if connection_pool:
                     checkpointer = AsyncPostgresSaver(connection_pool)
-                    await checkpointer.setup()
+                    await checkpointer.setup() # create table if it don't have. Save conversation state
                 else:
                     # In production, proceed without checkpointer if needed
                     checkpointer = None
