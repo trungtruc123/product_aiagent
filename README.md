@@ -41,8 +41,8 @@ Please use our dedicated channels for questions and discussion. Help is much mor
 
 - **AI & LLM Features**
   - Integrates MCP and A2A for secure and efficient access to external tools.
-  - Uses Hybrid RAG (keyword + vector search) to improve retrieval accuracy.
-  - Supports advanced memory (short-term, long-term, Redis, entity memory) with automatic conversation summarization to reduce cost.
+  - Uses Hybrid RAG (keyword + vector search + Graph search) to improve retrieval accuracy.
+  - Supports advanced memory (short-term, long-term, Redis, entity memory, mem0) with automatic conversation summarization to reduce cost.
   - Reliable LLM service with auto-retry using Tenacity.
   - Supports multiple models such as GPT-4o, GPT-4o mini, and GPT-5 series.
   - Real-time chat via streaming responses.
