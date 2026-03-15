@@ -17,7 +17,7 @@ wheels/
 .env.production
 
 # Misc
-*.ipynb
+#*.ipynb
 
 # Reports
 evals/reports/
